@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Gadget</title>
+    <script type="text/javascript" src="./js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="./js/gadget-helper.js"></script>
+    <script type="text/javascript" src="./js/gadget.js"></script>
+	<link href="styles/gadget.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body onload="gadget_load()">
+	<div class="docked">
+		<h1><a>Dell Status</a></h1>
+		<a href="javascript:;" title="update" class="refresh"></a>
+		<div class="msg"></div>
+		<div class="container">
+			<table>
+				<tr><th>Status:</th><td><div id="status"></div></tr>
+				<tr><td colSpan="2" style="text-align: center"><img id="status-img" /></td></tr>
+				<tr><th>ETA:</th><td id="eta"></tr>
+				<tr><td colSpan="2">
+					<div class="bars-container">
+						<div class="bar bar-expire"><span></span><div class="bar-icon"></div><div class="bar-extend"></div></div>
+					</div>
+				</td></tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

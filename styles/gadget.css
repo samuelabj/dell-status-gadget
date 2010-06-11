@@ -1,0 +1,155 @@
+html, body, ul, li, h1 {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: White;
+	text-decoration: none;
+}
+
+body {
+	width: 140px;
+	height: 240px;
+	color: White;	
+	font-size: 100%;
+	font-family: Arial;
+	background: black;
+}
+
+.docked {
+	/*width: 138;
+	height: 238;
+	border: solid 1px #707070;*/
+}
+
+h1 {
+	margin: 5px 0 0 5px;
+	font-size: .6em;
+	width: 130px;
+}
+
+h1 a:hover {
+	color: #E4E9E9;	
+}
+
+a.refresh {
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: url(images/refresh.png) no-repeat center center;
+}
+
+a.refresh:hover {
+	background: url(images/refresh_over.png) no-repeat center center;
+}
+
+.container {
+	font-size: .6em;
+	padding: 5px;
+}
+
+.container table {
+	width: 100%;
+}
+
+#status-img {
+	width: 65px;
+	height: 148px;
+	visibility: hidden;
+	border: solid 1px #0F1033;
+}
+
+.bars-container {
+}
+
+.bar {
+	border: solid 1px #0D1620;
+	background: url(images/bar_back.png) repeat-x center;
+	margin-left: 5px;
+	height: 20px;
+	position: relative;
+}
+
+.bar:hover {
+	border: solid 1px white;
+	cursor: pointer;	
+}
+
+.bar-extend {
+	height: 20px;
+	width: 0px;
+	border-right: solid 1px #666666;
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+
+.bar-peak .bar-extend {
+	background-image: url(images/bar_extend_lightblue.png);
+}
+
+.bar-offpeak .bar-extend {
+	background-image: url(images/bar_extend_purple.png);
+}
+
+.bar-expire .bar-extend {
+	background-image: url(images/bar_extend_blue.png);
+}
+
+.bar-expected {
+	height: 5px;
+	background: url(images/marker.png) no-repeat left bottom;
+	position: absolute;
+	width: 100%;
+	top: 15px;
+}
+
+.bar span {
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	color: white;
+}
+
+.bar-icon {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: -10px;
+	top: -2px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.bar-peak .bar-icon {
+	background-image: url(images/sun.png);
+}
+
+.bar-offpeak .bar-icon {
+	background-image: url(images/moon.png);
+}
+
+.bar-expire .bar-icon {
+	background-image: url(images/clock.png);
+}
+
+.msg {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-size: .7em;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: 3px;
+	padding: 5px;
+	z-index: 9999;
+	display: none;
+}
+
+.msg.processing {
+	background-image: url(images/load_black.gif);
+	padding-left: 25px;
+}

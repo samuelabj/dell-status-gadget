@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+	<name>Dell Status</name>
+	<author name="Samuel Ashton Brock Jones">
+		<logo src="./styles/images/icon.png" />
+	</author>
+	<copyright>© 2010</copyright>
+	<description>Scrapes Dell order status information</description>
+	<icons>
+		<icon height="79" width="100" src="./styles/images/icon.png" />
+	</icons>
+
+	<namespace>sabj</namespace>
+	<version>1.0.3</version>
+	<hosts>
+		<host name="sidebar">
+			<base type="HTML" apiVersion="1.0.0" src="gadget.html" />
+			<autoscaleDPI>true</autoscaleDPI>
+			<permissions>full</permissions>
+			<platform minPlatformVersion="1.0"/>
+		</host>
+	</hosts>
+</gadget>

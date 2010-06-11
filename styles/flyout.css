@@ -1,0 +1,76 @@
+html, body, ul, li, h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+}
+
+body {
+	width: 205px;
+	height: 110px;
+	color: White;	
+	font-size: 100%;
+	font-family: Arial;
+	background: none;
+}
+
+h1 {
+	font-size: .9em;
+}
+
+div.container {
+	margin: 5px 10px 5px 10px;
+	color: white;
+	position: relative;
+}
+
+#back-icon {
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	right: 5px;
+	top: 35px;
+	background-repeat: no-repeat;	
+}
+
+#back-icon.Peak {
+	background-image: url(images/sun_big.png);	
+}
+
+#back-icon.Off-Peak {
+	background-image: url(images/moon_big.png);
+}
+
+#back-icon.Expiration {
+	background-image: url(images/clock_big.png);	
+}
+
+a.close {
+	color: white;
+	position: absolute;
+	right: 5px;
+	top: -3px;
+	display: block;
+	padding: 3px 3px;
+	text-decoration: none;
+	font-size: .7em;
+	font-weight: bold;
+}
+
+a.close:hover {
+	color: #CCCCCC;
+}
+
+table {
+	font-size: .9em;
+	position: relative;
+	top: 2px;
+	z-index: 99;
+}
+
+table th {
+	font-weight: normal;
+	color: #CCCCCC;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
