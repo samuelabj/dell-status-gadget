@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Flyout</title>
+    <script type="text/javascript" src="./js/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/flyout.js"></script>
+	<link href="styles/flyout.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body onload="flyout_load()">
+	<g:background src="./styles/images/theme_1/flyout_back.png" style="position:absolute;top:0;left:0;z-index:-9999" />
+	<div class="container">
+		<div id="back-icon"></div>
+		<a class="close" href="javascript:;" onclick="System.Gadget.Flyout.show = false;">x</a>
+		<h1>Header</h1>
+		<table>
+		</table>
+	</div>
+</body>
+</html>

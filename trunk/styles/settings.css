@@ -1,0 +1,36 @@
+html, body, ul, li {
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	height: 100px;
+	width: 200px;
+}
+
+table {
+	width: 100%;
+	font-size: 1.2em;
+}
+
+table label {
+}
+
+table input {
+	width: 100%;
+	font-size: 1.2em;
+}
+
+#btnCheck {
+	width: 100%;	
+}
+
+#btnCheck.processing {
+	background: url(images/load_blank.gif) no-repeat 3px center;
+}
+
+#msg {
+	height: 40px;
+	color: #990000;
+	text-align: center;	
+}
